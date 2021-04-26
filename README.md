@@ -17,10 +17,10 @@ Data of the Billboard Top 100 Charts </br>
 [Clean_Billboard.csv](https://www.kaggle.com/dhruvildave/billboard-the-hot-100-songs)
 </br>
 
-## Overview:
+# Overview:
 For every song provided by Spotify's streaming service, there is an audio analysis system that attempts to quantify (7) specific musical qualities of a song along with its Tempo and Loudness.</br></br>
 The Musical Qualities and Their Descriptions:
-### Danceability
+### Danceability -------------------------
 How suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity.</br>
 Values: 0.0 - 1.0</br>
 ### Energy
@@ -35,6 +35,7 @@ Values: 0.0 - 1.0
 ### Instrumentalness
 A prediction whether a track contains vocals or not, where “Ooh” and “aah” sounds are treated as instrumental elements.</br>
 Values: 0.0 - 1.0
+### Liveness
 A Detection of the presence of an audience in the recording.</br>
 Values: 0.0 - 1.0
 ### Valence
