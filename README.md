@@ -25,8 +25,11 @@ How suitable a track is for dancing based on a combination of musical elements i
 Values: 0.0 - 1.0</br>
 Track | Spotify ID | Danceability
 ------|------------|-------------
-[]()||
+[In Da Club - 50 Cent](https://open.spotify.com/track/4RY96Asd9IefaL3X4LOLZ8?si=26d589f455f2430b)|4RY96Asd9IefaL3X4LOLZ8|0.902
+[Party Rock Anthem - LMFAO](https://open.spotify.com/track/0IkKz2J93C94Ei4BvDop7P?si=c745933353b34fc2)|0IkKz2J93C94Ei4BvDop7P|0.75
 [The News - July Talk](https://open.spotify.com/track/6aNSpHz5B2sfwLdbWLbwM0?si=e78aa628abd64997)|6aNSpHz5B2sfwLdbWLbwM0|0.506
+[The Void - Martha](https://open.spotify.com/track/447aLLYaDMpMQhcXDoxLHY?si=ba1535b67b7241eb)|1cVsAZq9aOpPkF5P0iLjTq|0.227
+[]()||
 
 ### Energy
 A reepresentation of intensity and activity. Perceptual features contributing to this attribute include dynamic range, perceived loudness, timbre, onset rate, and general entropy.</br>
@@ -54,6 +57,8 @@ Values: 0.0 - 1.0
 Track | Spotify ID | Acousticness
 ------|------------|-------------
 [One of These Days - Owen](https://open.spotify.com/track/2uNpHEnAzP3Ks0kwiZan7P?si=dcdf488d1c4c4626)|2uNpHEnAzP3Ks0kwiZan7P|0.982
+[Contaminated - Banks](https://open.spotify.com/track/4tJi4dodnpJ0MSKj2w6OkP?si=f08f7620e5894813)|4tJi4dodnpJ0MSKj2w6OkP|0.732
+[]()||
 [Hangar - 8485](https://open.spotify.com/track/1nXiUKuAu4mHte6Gt2HRdJ?si=3a24580c3d9e480c)|1nXiUKuAu4mHte6Gt2HRdJ|0.000352
 
 
@@ -72,7 +77,8 @@ Values: 0.0 - 1.0
 Track | Spotify ID | Liveness
 ------|------------|-------------
 [Nobody But You - Blake Shelton with Gwen Stefani](https://open.spotify.com/track/7gZgqLOE9VZjqJQAnUPqrE?si=c9a6996bc4cd4033)|5M8goiFYynmNxhueYW6grR|0.994
-[]()||
+[Love Shack - The B52's](https://open.spotify.com/track/4W4wYHtsrgDiivRASVOINL?si=87a774f5486a4e03)|4W4wYHtsrgDiivRASVOINL|0.7
+[Break My Heart - Dua Lipa](https://open.spotify.com/track/4PULMUg3AwudcRCzvVmgXT?si=793018649a854eea)|017PF4Q3l4DBUiWoXk4OWT|0.349
 
 
 ### Valence
@@ -81,6 +87,8 @@ Values: 0.0 - 1.0
 Track | Spotify ID | Valence
 ------|------------|-------------
 [Mint Car - The Cure](https://open.spotify.com/track/3OxKJOPa1AqFkZGBB2HUlW?si=6bd34aa0f58c46a5)|3OxKJOPa1AqFkZGBB2HUlW|0.981
+[Electric - Boy Harsher](https://open.spotify.com/track/1oUpE2W9kXdpYYMof5nnQA?si=8c933ea2eb9b4244)|1oUpE2W9kXdpYYMof5nnQA|0.534
+[I Have Nothing - Whitney Houston](https://open.spotify.com/track/31er9IGsfFbwqy1pH4aiTP?si=38e3391445114ca3)|31er9IGsfFbwqy1pH4aiTP|0.24
 [No One is Ever Going to Want Me - Giles Corey](https://open.spotify.com/track/4McullpiOd45TwEHlOISgs?si=afa81a8db2f546d9)|4McullpiOd45TwEHlOISgs|0.0861
 </br>
  
