@@ -37,6 +37,8 @@ Values: 0.0 - 1.0</br>
 Track | Spotify ID | Energy
 ------|------------|-------------
 [Cotton Shot - Mouthbreather](https://open.spotify.com/track/2Sci0oYsa3Dio0R8sr59Me?si=ecfa461704fa4421)|2Sci0oYsa3Dio0R8sr59Me|0.994
+[Power Freaks - Jean Dawson](https://open.spotify.com/track/7hICI90u3sVvsX7IaojRxQ?si=a1aa5a3d5da14c4a)|06dWM8AMMjKE9Obf2L1ojy|0.729
+[Nevermind the End - Tei Shi](https://open.spotify.com/track/5MECSlFYbCk102mDXqD1ZC?si=5b71e0c548f64edb)|3svNliBVGiVEXdeLUDfjD2|0.401
 [Faces to Numbers - 36](https://open.spotify.com/track/2R9O6QKvavHqN1P2mGd8mG?si=9642b89858b44277)|2R9O6QKvavHqN1P2mGd8mG|0.000273
 
 
