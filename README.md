@@ -26,7 +26,7 @@ Values: 0.0 - 1.0</br>
 Track | Spotify ID | Danceability
 ------|------------|-------------
 []()||
-[]()||
+[The News - July Talk](https://open.spotify.com/track/6aNSpHz5B2sfwLdbWLbwM0?si=e78aa628abd64997)|6aNSpHz5B2sfwLdbWLbwM0|0.506
 
 ### Energy
 A reepresentation of intensity and activity. Perceptual features contributing to this attribute include dynamic range, perceived loudness, timbre, onset rate, and general entropy.</br>
@@ -42,7 +42,9 @@ A detection of the presence of spoken words in a track. Values above 0.66 descri
 Values: 0.0 - 1.0
 Track | Spotify ID | Speechiness
 ------|------------|-------------
-[]()||
+[This is Not the End of the World - Neil Hilborn](https://open.spotify.com/track/0546u5xJuGFJzSt8wbcQD1?si=8efbf7a008754a3c)|0546u5xJuGFJzSt8wbcQD1|0.948
+[Inglorious - Slowthai feat. Skepta](https://open.spotify.com/track/5HHq5ZKQzjJS5LQ8Mp82NM?si=e1209556599d4ab3)|5HHq5ZKQzjJS5LQ8Mp82NM|0.327
+[Lament - Touche Amore](https://open.spotify.com/track/1KA8taNVhk8frOKkrkvs7O?si=f8c375e98f4f4f17)|2W6o5dI0sfWRafsusPWZHJ|0.153
 []()||
 
 
