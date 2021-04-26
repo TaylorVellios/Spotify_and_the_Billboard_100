@@ -32,7 +32,7 @@ Track | Spotify ID | Danceability
 []()||
 
 ### Energy
-A reepresentation of intensity and activity. Perceptual features contributing to this attribute include dynamic range, perceived loudness, timbre, onset rate, and general entropy.</br>
+A representation of intensity and activity. Perceptual features contributing to this attribute include dynamic range, perceived loudness, timbre, onset rate, and general entropy.</br>
 Values: 0.0 - 1.0</br>
 Track | Spotify ID | Energy
 ------|------------|-------------
