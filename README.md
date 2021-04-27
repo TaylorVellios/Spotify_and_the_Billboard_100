@@ -111,12 +111,16 @@ The Billboard Data at the time of creating these notebooks is 326,687 rows, maki
 By selecting a 5-year range of time, in this example - from 2015 to 2020, we end up with 26,100 songs.<br>
 Billboard frequently charts the same song from week to week until it loses steam.</br>
 In order to remove songs that chart multiple times it is important to add a column to the dataframe that is a list of all dates a song was included in the Top 100.</br>
-
+The consolidation stage accomplishes several things:
+* Preserves the value of the highest peak-rating for a song
+* Adds a column of lists for the weeks a song was on the chart
+* Ensures that artists with multiple songs and song titles that may be shared between artists are accounted for
+</br>
 ![consolidate](https://user-images.githubusercontent.com/14188580/116271272-71471d00-a745-11eb-9110-938850aa13e2.PNG)
 </br>
 The image above is the end-result of the consolidation stage of this notebook.</br>
 As you can see, we went from 26,100 rows to 2500.</br>
-The last thing we want to do is ping the Spotify API Server more than we have to. You are welcome Spotiy..</br>
+The last thing we want to do is ping the Spotify API Server more than we have to. You are welcome Spotify..</br>
 
 ## Data Collection - Spotify IDs
 
