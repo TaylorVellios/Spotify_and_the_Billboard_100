@@ -1,4 +1,4 @@
-# Spotify_and_the_Billboard_100
+# Using the Spotify API to Analyze the Billboard Top 100
 Comparing the Audio Features of Billboard Top 100 Tracks From the Last 30 years.
 
 ## Purpose
@@ -140,7 +140,7 @@ Since we need to obtain the Spotify ID for every possible track, the automatic f
 </br>
 
 After the first round of searching we have an output that looks something like this:</br>
-![found_ids](https://user-images.githubusercontent.com/14188580/116240405-67afbc00-a729-11eb-83a4-ea398238dc5d.PNG)
+![found_ids](https://user-images.githubusercontent.com/14188580/116308150-c9454a00-a76c-11eb-9173-b33ee0047c1f.PNG)
 </br>
 
 Any track that failed the automated search will have a NaN value in the "spotify_id" column.</br>
