@@ -106,14 +106,17 @@ The Spotify_and_Billboard.ipynb file is the first notebook used to clean and col
 ### Preparation
 The Billboard Data at the time of creating these notebooks is 326,687 rows, making filtering a crucial step before anything can be accomplished.</br>
 
-![filter](https://user-images.githubusercontent.com/14188580/116234642-76df3b80-a722-11eb-8406-a53cdb12958d.PNG)
+![filter](https://user-images.githubusercontent.com/14188580/116272741-c5063600-a746-11eb-8508-dd6da47937b6.PNG)
 
 By selecting a 5-year range of time, in this example - from 2015 to 2020, we end up with 26,100 songs.<br>
 Billboard frequently charts the same song from week to week until it loses steam.</br>
 In order to remove songs that chart multiple times it is important to add a column to the dataframe that is a list of all dates a song was included in the Top 100.</br>
 
 ![consolidate](https://user-images.githubusercontent.com/14188580/116271272-71471d00-a745-11eb-9110-938850aa13e2.PNG)
-
+</br>
+The image above is the end-result of the consolidation stage of this notebook.</br>
+As you can see, we went from 26,100 rows to 2500.</br>
+The last thing we want to do is ping the Spotify API Server more than we have to. You are welcome Spotiy..</br>
 
 ## Data Collection - Spotify IDs
 
@@ -128,13 +131,12 @@ Things Like:
 Will all fail the Spotipy search.</br>
 
 Since we need to obtain the Spotify ID for every possible track, the automatic filter I've written is not enough to capture every use-case of track name/artist string.</br>
-![search_output](https://user-images.githubusercontent.com/14188580/116238760-67aebc80-a727-11eb-80bf-b06913335109.PNG)
+![search_output](https://user-images.githubusercontent.com/14188580/116273587-7e650b80-a747-11eb-80c4-d4331699d40b.PNG)
 </br>
-Since there is already a column that contains every week a song charted, the last thing I want to do is ping the Spotify API for 12,000+ songs when we only need the ID for each song once.</br>
+
 After the first round of searching we have an output that looks something like this:</br>
 ![found_ids](https://user-images.githubusercontent.com/14188580/116240405-67afbc00-a729-11eb-83a4-ea398238dc5d.PNG)
 </br>
-2440 Unique Songs instead of 12,000. Thank me later API Servers.</br>
 
 Any track that failed the automated search will have a NaN value in the "spotify_id" column.</br>
 For the 2015-2020 filter range, 15 Songs included odd characters that broke our query or are not available on Spotify.</br>
