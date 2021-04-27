@@ -112,7 +112,8 @@ By selecting a 5-year range of time, in this example - from 2015 to 2020, we end
 Billboard frequently charts the same song from week to week until it loses steam.</br>
 In order to remove songs that chart multiple times it is important to add a column to the dataframe that is a list of all dates a song was included in the Top 100.</br>
 
-![consolidate](https://user-images.githubusercontent.com/14188580/116235003-eead6600-a722-11eb-9261-08a9fae72d81.PNG)
+![consolidate](https://user-images.githubusercontent.com/14188580/116271272-71471d00-a745-11eb-9110-938850aa13e2.PNG)
+
 
 ## Data Collection - Spotify IDs
 
@@ -128,11 +129,7 @@ Will all fail the Spotipy search.</br>
 
 Since we need to obtain the Spotify ID for every possible track, the automatic filter I've written is not enough to capture every use-case of track name/artist string.</br>
 ![search_output](https://user-images.githubusercontent.com/14188580/116238760-67aebc80-a727-11eb-80bf-b06913335109.PNG)
-
-The first automated search for ID's accomplishes two things:
-* Finds as many Spotify ID's as possible
-* Removes duplicate Songs
-
+</br>
 Since there is already a column that contains every week a song charted, the last thing I want to do is ping the Spotify API for 12,000+ songs when we only need the ID for each song once.</br>
 After the first round of searching we have an output that looks something like this:</br>
 ![found_ids](https://user-images.githubusercontent.com/14188580/116240405-67afbc00-a729-11eb-83a4-ea398238dc5d.PNG)
