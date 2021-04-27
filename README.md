@@ -156,7 +156,7 @@ Search Ranges | Manual Searches | Dropped Tracks
 2000-2010| 78 | 34 
 1990-2000| 342 | 128 
 
-</br></br>
+</br>
 The Manual Search cell allows the user to input a string as a workaround to the many ways Billboard 100 titles can impede the Spotipy query.</br>
 This part can be time consuming, especially when double checking within the Spotify system whether a song is available or not, or whether Billboard has a different name/artist convention than Spotify.</br>
 
@@ -172,9 +172,8 @@ Once all possible tracks have IDs populated and all failed tracks (if any) have 
 
 ![features_df](https://user-images.githubusercontent.com/14188580/116278716-62b03400-a74c-11eb-98e2-fef5c9a67a22.PNG)
 </br>
-The image above is a snapshot of the new columns we have just added to our DataFrame./br>
-At this point we have obtained all of the data that we need.
-</br>
+The image above is a snapshot of the new columns we have just added to our DataFrame.</br>
+At this point we have obtained all of the data that we need.</br>
 
 The last step in this notebook is to explode the dataframe and create a new dataframe with the average values of each Audio Feature by week.</br>
 After exploding our results based on the total_weeks column, our final output will look like the following DataFrame:
@@ -189,10 +188,24 @@ After a very lengthy process of accumulating Spotify IDs and searching for their
 </br>
 Due to the wide range of musical genres available in a single week sample of the Billboard 100, combined with the reliable results of Spotify's audio analysis system, any noticeable change in one of these metrics over time would suggest a noteworthy change in value weight.<br></br>
 
-![avg_features](https://user-images.githubusercontent.com/14188580/116307501-065d0c80-a76c-11eb-9375-0994c3851e28.png)
-
+![avg_features](https://user-images.githubusercontent.com/14188580/116309950-08749a80-a76f-11eb-9f71-0cf5a9bba3e6.png)
 <br></br>
 
 
+From a zoomed out perspective, it is easy to tell where the musical priorities of popular music stand.</br>
+#### Instrumentalness
+While instrumentation without vocals has never been a common factor in pop music, what looks to be a faint heartbeat in the 90s has barely been breathing since the turn of the century.</br>
 
+#### Speechiness
+This one is a difficult feature to analyze due to the distribution of its values across music.</br>
+![speechiness_hist](https://user-images.githubusercontent.com/14188580/116311332-c51b2b80-a770-11eb-9093-9541f938ecd5.png)
+</br>
+As mentioned in the overview, higher confidence levels of Speechiness are only hit when there is a voice speaking without music.</br>
+In my research, the highest levels of Speechiness in music are reserved almost exclusively for Rap and Country (guess they're not so different after all..)</br>
+This may indicate an algorithmic emphasis on perceived vocal:music loudness by Spotify.</br>
+In any case, the rising average of speechiness is significant now that we have stayed above 0.1 for the last 5 years when the mean is so close to 0.</br>
+What will be a recurring theme throughout the rest of this analysis is the near-sinusoidal shape Speechiness takes.</br>
+What is most interesting me in this long-term cyclical pattern is a trend of increasing intensity per cycle.</br>
+
+#### Acousticness
 
