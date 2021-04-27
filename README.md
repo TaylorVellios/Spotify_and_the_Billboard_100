@@ -114,9 +114,10 @@ In order to remove songs that chart multiple times it is important to add a colu
 The consolidation stage accomplishes several things:
 * Preserves the value of the highest peak-rating for a song
 * Adds a column of lists for the weeks a song was on the chart
-* Ensures that artists with multiple songs and song titles that may be shared between artists are accounted for
-</br>
+* Ensures that artists with multiple songs and song titles that may be shared between artists are accounted for</br>
+
 ![consolidate](https://user-images.githubusercontent.com/14188580/116271272-71471d00-a745-11eb-9110-938850aa13e2.PNG)
+
 </br>
 The image above is the end-result of the consolidation stage of this notebook.</br>
 As you can see, we went from 26,100 rows to 2500.</br>
