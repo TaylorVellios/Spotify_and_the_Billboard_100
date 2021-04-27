@@ -164,4 +164,9 @@ At this point we have obtained all of the data that we need.
 </br>
 
 The last step in this notebook is to explode the dataframe and create a new dataframe with the average values of each Audio Feature by week.</br>
+After exploding our results based on the total_weeks column, our final output will look like the following DataFrame:
+
+![averages](https://user-images.githubusercontent.com/14188580/116282476-7067b880-a750-11eb-9ddc-3f0d3f7c1e2c.PNG)
+
+<br></br>
 
