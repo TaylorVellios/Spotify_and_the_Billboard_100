@@ -114,7 +114,7 @@ In order to remove songs that chart multiple times it is important to add a colu
 
 ![consolidate](https://user-images.githubusercontent.com/14188580/116235003-eead6600-a722-11eb-9261-08a9fae72d81.PNG)
 
-## Spotify API Searching
+## Data Collection - Spotify IDs
 
 Due to the many different ways that artists name their songs and give song credits to accompanying artists, searching spotify based on the default strings in "song" and "artist" stored in the Billboard .csv is significantly unreliable.</br>
 
@@ -123,6 +123,7 @@ Things Like:
 * Punctuation
 * Terms Joining Multiple Artists: "Featuring", "With", "&", "Duet With"... etc
 * Censored Words
+
 Will all fail the Spotipy search.</br>
 
 Since we need to obtain the Spotify ID for every possible track, the automatic filter I've written is not enough to capture every use-case of track name/artist string.</br>
@@ -131,6 +132,7 @@ Since we need to obtain the Spotify ID for every possible track, the automatic f
 The first automated search for ID's accomplishes two things:
 * Finds as many Spotify ID's as possible
 * Removes duplicate Songs
+
 Since there is already a column that contains every week a song charted, the last thing I want to do is ping the Spotify API for 12,000+ songs when we only need the ID for each song once.</br>
 After the first round of searching we have an output that looks something like this:</br>
 ![found_ids](https://user-images.githubusercontent.com/14188580/116240405-67afbc00-a729-11eb-83a4-ea398238dc5d.PNG)
@@ -139,6 +141,7 @@ After the first round of searching we have an output that looks something like t
 
 Any track that failed the automated search will have a NaN value in the "spotify_id" column.</br>
 For the 2015-2020 filter range, 15 Songs included odd characters that broke our query or are not available on Spotify.</br>
+
 The further back on the Billboard data you go, the more likely it is that a song will not be on the platform.</br>
 In a separate search, in a range from 1990-2000, at this step in the process I had 331 songs to manually search.</br>
 
@@ -146,8 +149,12 @@ The Manual Search cell allows the user to input a string as a workaround to the 
 This part can be time consuming, especially when double checking within the Spotify system whether a song is available or not, or whether Billboard has a different name/artist convention than Spotify.</br>
 
 In the event that a track is not available on the Spotify Platform, "pass" should be input for the prompt in this manual searching cell.</br>
-
+For this example, no tracks need to be dropped, all NaN values have been filled by manually searching.</br>
+When I searched 1990-2000 as mentioned above, 133 out of 331 songs were not able to be found on Spotify.</br>
 ![manual search](https://user-images.githubusercontent.com/14188580/116242064-2a4c2e00-a72b-11eb-9e87-9472267361cd.PNG)
 </br>
 
+## Data Collection - Spotify Audio Features
+
+Once all possible tracks have IDs populated and all failed tracks have been dropped, we can obtain the audio features for each unique track and explode the DataFrame based on the list of weeks the track charted.</br>
 
