@@ -143,24 +143,24 @@ After the first round of searching we have an output that looks something like t
 </br>
 
 Any track that failed the automated search will have a NaN value in the "spotify_id" column.</br>
-For the 2015-2020 filter range, 15 Songs included odd characters that broke our query or are not available on Spotify.</br>
+For the 2015-2020 filter range, 16 Songs included odd characters that broke our query or are not available on Spotify.</br>
 
 The further back on the Billboard charts you go, the more likely it is that a song will not be on the platform.</br>
-In a separate search, in a range from 1990-2000, at this step in the process I had 331 songs to manually search.</br>
 
+Search Ranges | Manual Searches | Dropped Tracks
+--------------|-----------------|----------------
+2020-Today| 10 | 2 
+2015-2020| 16 | 0 
+2010-2015| 21 | 10 
+2000-2010| 78 | 34 
+1990-2000| 342 | 128 
+
+</br></br>
 The Manual Search cell allows the user to input a string as a workaround to the many ways Billboard 100 titles can impede the Spotipy query.</br>
 This part can be time consuming, especially when double checking within the Spotify system whether a song is available or not, or whether Billboard has a different name/artist convention than Spotify.</br>
 
 In the event that a track is not available on the Spotify Platform, "pass" should be input for the prompt in this manual searching cell.</br>
 For this example, no tracks need to be dropped, all NaN values have been filled by manually searching.</br>
-Search Ranges | Manual Searches | Dropped Tracks
---------------|-----------------|----------------
-2020-Today| 10 | 2 
-2015-2020| 15 | 0 
-2010-2015| 21 | 10 
-2000-2010| 78 | 34 
-1990-2000| 342 | 128 
-</br></br>
 
 ![manual search](https://user-images.githubusercontent.com/14188580/116242064-2a4c2e00-a72b-11eb-9e87-9472267361cd.PNG)
 </br>
@@ -181,4 +181,17 @@ After exploding our results based on the total_weeks column, our final output wi
 ![averages](https://user-images.githubusercontent.com/14188580/116282476-7067b880-a750-11eb-9ddc-3f0d3f7c1e2c.PNG)
 
 <br></br>
+
+# Analysis
+
+After a very lengthy process of accumulating Spotify IDs and searching for their respective Audio Features, I gathered all of the data into a combined .csv file that contains the average value for each Audio Feature grouped by each week of the Billboard Top 100 since January of 1990.</br>
+</br>
+Due to the wide range of musical genres available in a single week sample of the Billboard 100, combined with the reliable results of Spotify's audio analysis system, any noticeable change in one of these metrics over time would suggest a noteworthy change in value weight.<br></br>
+
+![avg_features](https://user-images.githubusercontent.com/14188580/116307501-065d0c80-a76c-11eb-9375-0994c3851e28.png)
+
+<br></br>
+
+
+
 
