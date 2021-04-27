@@ -100,6 +100,54 @@ Track | Spotify ID | Valence
 # Data Collection
 In this repository is a file named Clean_Billboard.csv which contains all of the Billboard Top 100 Songs for every week since its inception in 1958.</br>
 The Spotify_and_Billboard.ipynb file is the first notebook used to clean and collect information based on this initial .csv file.</br>
+
 *For anyone who wants to use the Spotipy library to access the Spotify API, the authorization system in Cell2 requires a python file in the same directory as this with two variables: client_id and client_secret set to your individual access tokens.*</br>
+
+### Preparation
 The Billboard Data at the time of creating these notebooks is 326,687 rows, making filtering a crucial step before anything can be accomplished.</br>
+
+![filter](https://user-images.githubusercontent.com/14188580/116234642-76df3b80-a722-11eb-8406-a53cdb12958d.PNG)
+
+By selecting a 5-year range of time, in this example - from 2015 to 2020, we end up with 26,100 songs.<br>
+Billboard frequently charts the same song from week to week until it loses steam.</br>
+In order to remove songs that chart multiple times it is important to add a column to the dataframe that is a list of all dates a song was included in the Top 100.</br>
+
+![consolidate](https://user-images.githubusercontent.com/14188580/116235003-eead6600-a722-11eb-9261-08a9fae72d81.PNG)
+
+## Spotify API Searching
+
+Due to the many different ways that artists name their songs and give song credits to accompanying artists, searching spotify based on the default strings in "song" and "artist" stored in the Billboard .csv is significantly unreliable.</br>
+
+Non-Alphanumeric Characters and Artist Separators are quick to break the Spotipy query function.</br>
+Things Like:
+* Punctuation
+* Terms Joining Multiple Artists: "Featuring", "With", "&", "Duet With"... etc
+* Censored Words
+Will all fail the Spotipy search.</br>
+
+Since we need to obtain the Spotify ID for every possible track, the automatic filter I've written is not enough to capture every use-case of track name/artist string.</br>
+![search_output](https://user-images.githubusercontent.com/14188580/116238760-67aebc80-a727-11eb-80bf-b06913335109.PNG)
+
+The first automated search for ID's accomplishes two things:
+* Finds as many Spotify ID's as possible
+* Removes duplicate Songs
+Since there is already a column that contains every week a song charted, the last thing I want to do is ping the Spotify API for 12,000+ songs when we only need the ID for each song once.</br>
+After the first round of searching we have an output that looks something like this:</br>
+![found_ids](https://user-images.githubusercontent.com/14188580/116240405-67afbc00-a729-11eb-83a4-ea398238dc5d.PNG)
+</br>
+2440 Unique Songs instead of 12,000. Thank me later API Servers.</br>
+
+Any track that failed the automated search will have a NaN value in the "spotify_id" column.</br>
+For the 2015-2020 filter range, 15 Songs included odd characters that broke our query or are not available on Spotify.</br>
+The further back on the Billboard data you go, the more likely it is that a song will not be on the platform.</br>
+In a separate search, in a range from 1990-2000, at this step in the process I had 331 songs to manually search.</br>
+
+The Manual Search cell allows the user to input a string as a workaround to the many ways Billboard 100 titles can impede the Spotipy query.</br>
+This part can be time consuming, especially when double checking within the Spotify system whether a song is available or not, or whether Billboard has a different name/artist convention than Spotify.</br>
+
+In the event that a track is not available on the Spotify Platform, "pass" should be input for the prompt in this manual searching cell.</br>
+
+![manual search](https://user-images.githubusercontent.com/14188580/116242064-2a4c2e00-a72b-11eb-9e87-9472267361cd.PNG)
+</br>
+
 
