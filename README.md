@@ -141,7 +141,7 @@ After the first round of searching we have an output that looks something like t
 Any track that failed the automated search will have a NaN value in the "spotify_id" column.</br>
 For the 2015-2020 filter range, 15 Songs included odd characters that broke our query or are not available on Spotify.</br>
 
-The further back on the Billboard data you go, the more likely it is that a song will not be on the platform.</br>
+The further back on the Billboard charts you go, the more likely it is that a song will not be on the platform.</br>
 In a separate search, in a range from 1990-2000, at this step in the process I had 331 songs to manually search.</br>
 
 The Manual Search cell allows the user to input a string as a workaround to the many ways Billboard 100 titles can impede the Spotipy query.</br>
@@ -155,5 +155,13 @@ When I searched 1990-2000 as mentioned above, 133 out of 331 songs were not able
 
 ## Data Collection - Spotify Audio Features
 
-Once all possible tracks have IDs populated and all failed tracks have been dropped, we can obtain the audio features for each unique track and explode the DataFrame based on the list of weeks the track charted.</br>
+Once all possible tracks have IDs populated and all failed tracks (if any) have been dropped, we can obtain the audio features for each unique track.</br>
+
+![features_df](https://user-images.githubusercontent.com/14188580/116278716-62b03400-a74c-11eb-98e2-fef5c9a67a22.PNG)
+</br>
+The image above is a snapshot of the new columns we have just added to our DataFrame./br>
+At this point we have obtained all of the data that we need.
+</br>
+
+The last step in this notebook is to explode the dataframe and create a new dataframe with the average values of each Audio Feature by week.</br>
 
