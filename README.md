@@ -12,10 +12,9 @@ pandas
 matplotlib
 numpy
 ````
-</br>
-Data of the Billboard Top 100 Charts </br>
-[Clean_Billboard.csv](https://www.kaggle.com/dhruvildave/billboard-the-hot-100-songs)
-</br>
+
+[Data of the Billboard Top 100 Charts](https://www.kaggle.com/dhruvildave/billboard-the-hot-100-songs)
+<br></br>
 
 # Overview:
 For every song provided by Spotify's streaming service, there is an audio analysis system that attempts to quantify (7) specific musical qualities of a song along with its Tempo and Loudness.</br></br>
