@@ -4,6 +4,7 @@ Comparing the Audio Features of Billboard Top 100 Tracks From the Last 30 years.
 ## Purpose
 To populate, transform, and analyze data for popular music, as dictated by the Billboard Top 100 Charts, using Spotify's API.</br>
 Is it possible for Spotify to quantify the changes in popular music over the last 30 years?</br>
+[Data of the Billboard Top 100 Charts](https://www.kaggle.com/dhruvildave/billboard-the-hot-100-songs)
 
 ## Resources:
 ````
@@ -13,7 +14,6 @@ matplotlib
 numpy
 ````
 
-[Data of the Billboard Top 100 Charts](https://www.kaggle.com/dhruvildave/billboard-the-hot-100-songs)
 <br></br>
 
 # Overview:
@@ -94,4 +94,12 @@ Track | Spotify ID | Valence
 [I Have Nothing - Whitney Houston](https://open.spotify.com/track/31er9IGsfFbwqy1pH4aiTP?si=38e3391445114ca3)|31er9IGsfFbwqy1pH4aiTP|0.24
 [No One is Ever Going to Want Me - Giles Corey](https://open.spotify.com/track/4McullpiOd45TwEHlOISgs?si=afa81a8db2f546d9)|4McullpiOd45TwEHlOISgs|0.0861
 </br>
- 
+<br></br>
+
+
+# Data Collection
+In this repository is a file named Clean_Billboard.csv which contains all of the Billboard Top 100 Songs for every week since its inception in 1958.</br>
+The Spotify_and_Billboard.ipynb file is the first notebook used to clean and collect information based on this initial .csv file.</br>
+*For anyone who wants to use the Spotipy library to access the Spotify API, the authorization system in Cell2 requires a python file in the same directory as this with two variables: client_id and client_secret set to your individual access tokens.*</br>
+The Billboard Data at the time of creating these notebooks is 326,687 rows, making filtering a crucial step before anything can be accomplished.</br>
+
