@@ -194,7 +194,7 @@ Due to the wide range of musical genres available in a single week sample of the
 
 From a zoomed out perspective, it is easy to tell where the musical priorities of popular music stand.</br>
 #### Instrumentalness
-While instrumentation without vocals has never been a common factor in pop music, what looks to be a faint heartbeat in the 90s has barely been breathing since the turn of the century.</br>
+While instrumentation without vocals has never been a common factor in pop music, what looks to be a faint heartbeat in the 90s has barely been breathing since 2007.</br>
 
 #### Speechiness
 This one is a difficult feature to analyze due to the distribution of its values across music.</br>
@@ -205,7 +205,7 @@ In my research, the highest levels of Speechiness in music are reserved almost e
 This may indicate an algorithmic emphasis on perceived vocal:music loudness by Spotify.</br>
 In any case, the rising average of speechiness is significant now that we have stayed above 0.1 for the last 5 years when the mean is so close to 0.</br>
 What will be a recurring theme throughout the rest of this analysis is the near-sinusoidal shape Speechiness takes.</br>
-What is most interesting me in this long-term cyclical pattern is a trend of increasing intensity per cycle.</br>
+What is most interesting to me in this long-term cyclical pattern is a trend of increasing intensity per cycle.</br>
 
 #### Acousticness
 
