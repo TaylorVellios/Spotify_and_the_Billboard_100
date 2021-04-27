@@ -194,7 +194,7 @@ Due to the wide range of musical genres available in a single week sample of the
 
 From a zoomed out perspective, it is easy to tell where the musical priorities of popular music stand.</br>
 #### Instrumentalness
-While instrumentation without vocals has never been a common factor in pop music, what looks to be a faint heartbeat in the 90s has barely been breathing since 2007.</br>
+While instrumentation without vocals has never been a common factor in pop music, what looks to be a faint heartbeat in the 90s has barely been breathing since 2007.<br></br>
 
 #### Speechiness
 This one is a difficult feature to analyze due to the distribution of its values across music.</br>
@@ -205,7 +205,19 @@ In my research, the highest levels of Speechiness in music are reserved almost e
 This may indicate an algorithmic emphasis on perceived vocal:music loudness by Spotify.</br>
 In any case, the rising average of speechiness is significant now that we have stayed above 0.1 for the last 5 years when the mean is so close to 0.</br>
 What will be a recurring theme throughout the rest of this analysis is the near-sinusoidal shape Speechiness takes.</br>
-What is most interesting to me in this long-term cyclical pattern is a trend of increasing intensity per cycle.</br>
+What is most interesting to me in this long-term cyclical pattern is a trend of increasing intensity per cycle.<br></br>
 
 #### Acousticness
+Acousticness is a funny one, from 1990 it is clear that there is a large single cycle, but zooming in there are annual trends that cannot be ignored.</br>
+![acoustic](https://user-images.githubusercontent.com/14188580/116322387-9eb1bc00-a781-11eb-9b87-57be4b07dc06.png)
+</br>
+Over the last 11 years we are seeing a significant upwards trend in Acousticness.</br>
+What makes this so funny to me are the annual mini-cycles that have been flying up every holiday season.</br>
+Since 2010, there is severe upwards movement in acousticness leading into the new year, where it then falls back to its steady growth line.</br>
+This intensity has been growing exponentially over the last 3 years.
+</br>
+It's very difficult for me not to assume this is due to what we can call a "Holiday Effect".</br>
+It is no secret in the music world that artists will strategically release music based on the time of year.</br>
+Summer is most notable for positive bouncy radio hits, maybe the end of the year is a market in its own.<br></br>
 
+#### Liveness
