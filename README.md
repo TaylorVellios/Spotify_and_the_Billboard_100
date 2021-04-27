@@ -104,7 +104,7 @@ The Spotify_and_Billboard.ipynb file is the first notebook used to clean and col
 *For anyone who wants to use the Spotipy library to access the Spotify API, the authorization system in Cell2 requires a python file in the same directory as this with two variables: client_id and client_secret set to your individual access tokens.*</br>
 
 ### Preparation
-The Billboard Data at the time of creating these notebooks is 326,687 rows, making filtering a crucial step before anything can be accomplished.</br>
+The Billboard Data at the time of creating these notebooks is 327,387  rows, making filtering a crucial step before anything can be accomplished.</br>
 
 ![filter](https://user-images.githubusercontent.com/14188580/116272741-c5063600-a746-11eb-8508-dd6da47937b6.PNG)
 
@@ -153,7 +153,15 @@ This part can be time consuming, especially when double checking within the Spot
 
 In the event that a track is not available on the Spotify Platform, "pass" should be input for the prompt in this manual searching cell.</br>
 For this example, no tracks need to be dropped, all NaN values have been filled by manually searching.</br>
-When I searched 1990-2000 as mentioned above, 133 out of 331 songs were not able to be found on Spotify.</br>
+Search Ranges | Manual Searches | Dropped Tracks
+--------------|-----------------|----------------
+2020-Today| 10 | 2 
+2015-2020| 15 | 0 
+2010-2015| 21 | 10 
+2000-2010| 78 | 34 
+1990-2000| 342 | 128 
+</br></br>
+
 ![manual search](https://user-images.githubusercontent.com/14188580/116242064-2a4c2e00-a72b-11eb-9e87-9472267361cd.PNG)
 </br>
 
