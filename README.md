@@ -222,7 +222,7 @@ What is most interesting to me in this long-term cyclical pattern is a trend of 
 
 ### Acousticness
 Acousticness is a funny one, from 1990 it is clear that there is a large single cycle, but zooming in there are annual trends that cannot be ignored.</br>
-![acoustic](https://user-images.githubusercontent.com/14188580/116322387-9eb1bc00-a781-11eb-9b87-57be4b07dc06.png)
+![acoustic](https://user-images.githubusercontent.com/14188580/116410325-479bfd80-a7fa-11eb-9af1-c6492fe33212.png)
 </br>
 Over the last 11 years we are seeing a significant upwards trend in Acousticness.</br>
 What makes this so funny to me are the annual mini-cycles that have been flying up every holiday season.</br>
