@@ -216,6 +216,7 @@ As mentioned in the overview, higher confidence levels of Speechiness are only h
 In my research of tracks outside of the Billboard charts, the highest levels of Speechiness in music are reserved almost exclusively for Rap and Country (guess they're not so different after all..)</br>
 This may indicate an algorithmic emphasis on perceived vocal:music loudness by Spotify.</br>
 In any case, the rising average of speechiness is significant now that we have stayed above 0.1 for the last 5 years when the mean is so close to 0.</br>
+![speechiness](https://user-images.githubusercontent.com/14188580/116404250-15879d00-a7f4-11eb-99d8-fcdf88b71812.png)
 What will be a recurring theme throughout the rest of this analysis is the near-sinusoidal shape Speechiness takes.</br>
 What is most interesting to me in this long-term cyclical pattern is a trend of increasing intensity per cycle.<br></br>
 
@@ -233,6 +234,9 @@ It is no secret in the music world that artists will strategically release music
 Summer is most notable for positive bouncy radio hits, maybe the end of the year is a market in its own.<br></br>
 
 ### Liveness
+![liveness](https://user-images.githubusercontent.com/14188580/116406351-2df8b700-a7f6-11eb-9d14-2bf722b6b64e.png)
+</br>With very little change in average over the last 30 years, Liveness shows very strong yearly trends where Billboard seems to really lean into it around the new year.</br>
+These yearly cycles are very similar to Acousticness, but the most rigid cycle patterns can be seen from 2002 to 2010, ending with the largest peak.<br></br>
 
 ### Valence
 
