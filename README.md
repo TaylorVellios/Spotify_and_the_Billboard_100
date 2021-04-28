@@ -7,14 +7,24 @@ Is it possible for Spotify to quantify the changes in popular music over the las
 [Data of the Billboard Top 100 Charts](https://www.kaggle.com/dhruvildave/billboard-the-hot-100-songs)
 
 ## Resources:
+[Spotipy](https://spotipy.readthedocs.io/en/2.18.0/) - Python Library for the Spotify API
 ````
-spotipy
-pandas
-matplotlib
-numpy
+pip install spotipy
+````
+Pandas
+````
+pip install pandas
+````
+Matplotlib
+````
+pip install matplotlib
+````
+Numpy
+````
+pip install numpy
 ````
 
-<br></br>
+</br>
 
 # Overview:
 For every song provided by Spotify's streaming service, there is an audio analysis system that attempts to quantify (7) specific musical qualities of a song along with its Tempo and Loudness.</br></br>
@@ -193,21 +203,23 @@ Due to the wide range of musical genres available in a single week sample of the
 
 
 From a zoomed out perspective, it is easy to tell where the musical priorities of popular music stand.</br>
-#### Instrumentalness
-While instrumentation without vocals has never been a common factor in pop music, what looks to be a faint heartbeat in the 90s has barely been breathing since 2007.<br></br>
+### Instrumentalness
+While instrumentation without vocals has never been a common factor in pop music, what looks to be a faint heartbeat in the 90s has barely been breathing since 2007.</br>
+![instrumentalism](https://user-images.githubusercontent.com/14188580/116400156-56c97e00-a7ef-11eb-8e7d-8996ef2ad911.png)
+<br></br>
 
-#### Speechiness
+### Speechiness
 This one is a difficult feature to analyze due to the distribution of its values across music.</br>
 ![speechiness_hist](https://user-images.githubusercontent.com/14188580/116311332-c51b2b80-a770-11eb-9093-9541f938ecd5.png)
 </br>
 As mentioned in the overview, higher confidence levels of Speechiness are only hit when there is a voice speaking without music.</br>
-In my research, the highest levels of Speechiness in music are reserved almost exclusively for Rap and Country (guess they're not so different after all..)</br>
+In my research of tracks outside of the Billboard charts, the highest levels of Speechiness in music are reserved almost exclusively for Rap and Country (guess they're not so different after all..)</br>
 This may indicate an algorithmic emphasis on perceived vocal:music loudness by Spotify.</br>
 In any case, the rising average of speechiness is significant now that we have stayed above 0.1 for the last 5 years when the mean is so close to 0.</br>
 What will be a recurring theme throughout the rest of this analysis is the near-sinusoidal shape Speechiness takes.</br>
 What is most interesting to me in this long-term cyclical pattern is a trend of increasing intensity per cycle.<br></br>
 
-#### Acousticness
+### Acousticness
 Acousticness is a funny one, from 1990 it is clear that there is a large single cycle, but zooming in there are annual trends that cannot be ignored.</br>
 ![acoustic](https://user-images.githubusercontent.com/14188580/116322387-9eb1bc00-a781-11eb-9b87-57be4b07dc06.png)
 </br>
@@ -220,4 +232,11 @@ It's very difficult for me not to assume this is due to what we can call a "Holi
 It is no secret in the music world that artists will strategically release music based on the time of year.</br>
 Summer is most notable for positive bouncy radio hits, maybe the end of the year is a market in its own.<br></br>
 
-#### Liveness
+### Liveness
+
+### Valence
+
+### Danceability
+
+### Energy
+
