@@ -234,7 +234,7 @@ It is no secret in the music world that artists will strategically release music
 Summer is most notable for positive bouncy radio hits, maybe the end of the year is a market in its own.<br></br>
 
 ### Liveness
-![liveness](https://user-images.githubusercontent.com/14188580/116406351-2df8b700-a7f6-11eb-9d14-2bf722b6b64e.png)
+![liveness](https://user-images.githubusercontent.com/14188580/116410204-276c3e80-a7fa-11eb-982a-595dd00abf17.png)
 </br>With very little change in average over the last 30 years, Liveness shows very strong yearly trends where Billboard seems to really lean into it around the new year.</br>
 These yearly cycles are very similar to Acousticness, but the most rigid cycle patterns can be seen from 2002 to 2010, ending with the largest peak.<br></br>
 
