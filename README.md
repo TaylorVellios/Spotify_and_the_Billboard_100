@@ -206,7 +206,6 @@ From a zoomed out perspective, it is easy to tell where the musical priorities o
 ### Instrumentalness
 While instrumentation without vocals has never been a common factor in pop music, what looks to be a faint heartbeat in the 90s has barely been breathing since 2007.</br>
 ![instrumentalism](https://user-images.githubusercontent.com/14188580/116900720-ae585700-abfe-11eb-90a6-a23c10b59022.png)
-
 <br></br>
 
 ### Speechiness
@@ -246,8 +245,18 @@ Since Liveness is typically a polarized value, the consistent yearly movement be
 This theory was confirmed with some Pandas magic.</br>
 I added a column to the dataframe of weekly averages that includes the number of tracks per week that have a Liveness value greater than 0.4.</br>
 Sorting the dataframe by liveness_avg is VERY close to sorting by this new column of song counts.</br>
-
+![countof_liveness](https://user-images.githubusercontent.com/14188580/116901533-a8af4100-abff-11eb-9bdb-1c3258559b0e.PNG)
+<br></br>
 ### Valence
+![valence](https://user-images.githubusercontent.com/14188580/116901741-e8762880-abff-11eb-8b3c-87f76e1c9f32.png)
+As a huge music fan, the result of visualizing Valence is something that I saw coming.</br>
+According to Spotify, popular music has been steadily becoming less and less "positive" or "happy" sounding over the last 30 years.</br>
+
+While sadder songs have always had a place in popular music, this long-term trend downward is significant due to how little the averages move from year to year.</br>
+![valence_change_Desc](https://user-images.githubusercontent.com/14188580/116905698-f0849700-ac04-11eb-80ba-f00780d67050.PNG)
+The chart above shows the pd.describe() output for minimum avg. valence, maximum avg. valence, and the change between those values for each year since 1990.</br>
+
+
 
 ### Danceability
 
