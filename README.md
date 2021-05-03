@@ -198,14 +198,15 @@ After a very lengthy process of accumulating Spotify IDs and searching for their
 </br>
 Due to the wide range of musical genres available in a single week sample of the Billboard 100, combined with the reliable results of Spotify's audio analysis system, any noticeable change in one of these metrics over time would suggest a noteworthy change in value weight.<br></br>
 
-![avg_features](https://user-images.githubusercontent.com/14188580/116309950-08749a80-a76f-11eb-9f71-0cf5a9bba3e6.png)
+![avg_features](https://user-images.githubusercontent.com/14188580/116900731-b2847480-abfe-11eb-8bc2-2b3690aefbd1.png)
 <br></br>
 
 
 From a zoomed out perspective, it is easy to tell where the musical priorities of popular music stand.</br>
 ### Instrumentalness
 While instrumentation without vocals has never been a common factor in pop music, what looks to be a faint heartbeat in the 90s has barely been breathing since 2007.</br>
-![instrumentalism](https://user-images.githubusercontent.com/14188580/116400156-56c97e00-a7ef-11eb-8e7d-8996ef2ad911.png)
+![instrumentalism](https://user-images.githubusercontent.com/14188580/116900720-ae585700-abfe-11eb-90a6-a23c10b59022.png)
+
 <br></br>
 
 ### Speechiness
@@ -216,7 +217,7 @@ As mentioned in the overview, higher confidence levels of Speechiness are only h
 In my research of tracks outside of the Billboard charts, the highest levels of Speechiness in music are reserved almost exclusively for Rap and Country (guess they're not so different after all..)</br>
 This may indicate an algorithmic emphasis on perceived vocal:music loudness by Spotify.</br>
 In any case, the rising average of speechiness is significant now that we have stayed above 0.1 for the last 5 years when the mean is so close to 0.</br>
-![speechiness](https://user-images.githubusercontent.com/14188580/116404250-15879d00-a7f4-11eb-99d8-fcdf88b71812.png)
+![speechiness](https://user-images.githubusercontent.com/14188580/116900703-a7314900-abfe-11eb-884f-aacdade9ff91.png)
 What will be a recurring theme throughout the rest of this analysis is the near-sinusoidal shape Speechiness takes.</br>
 What is most interesting to me in this long-term cyclical pattern is a trend of increasing intensity per cycle.<br></br>
 
@@ -234,10 +235,11 @@ It is no secret in the music world that artists will strategically release music
 Summer is most notable for positive bouncy radio hits, maybe the end of the year is a market in its own.<br></br>
 
 ### Liveness
-![liveness](https://user-images.githubusercontent.com/14188580/116410204-276c3e80-a7fa-11eb-982a-595dd00abf17.png)
+![liveness](https://user-images.githubusercontent.com/14188580/116900668-9da7e100-abfe-11eb-942f-e7f39247315a.png)
 </br>With very little change in average over the last 30 years, Liveness shows very strong yearly trends where Billboard seems to really lean into it around the new year.</br>
 These yearly cycles are very similar to Acousticness, but the most rigid cycle patterns can be seen from 2002 to 2010, ending with the largest peak.</br>
-![liveness_2002-2012](https://user-images.githubusercontent.com/14188580/116883219-f7061500-abea-11eb-81ca-f1364fea27d1.png)
+![liveness_2002-2012](https://user-images.githubusercontent.com/14188580/116900660-9aacf080-abfe-11eb-8ffe-22b3aba51afb.png)
+
 </br>
 
 Since Liveness is typically a polarized value, the consistent yearly movement between minimum and maximum is caused by the ratio of songs that fall under a "live" category included in the week.</br>
