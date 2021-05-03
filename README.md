@@ -252,13 +252,31 @@ Sorting the dataframe by liveness_avg is VERY close to sorting by this new colum
 As a huge music fan, the result of visualizing Valence is something that I saw coming.</br>
 According to Spotify, popular music has been steadily becoming less and less "positive" or "happy" sounding over the last 30 years.</br>
 
-While sadder songs have always had a place in popular music, this long-term trend downward is significant due to how little the averages move from year to year.</br>
+While sadder songs have always had a place in popular music, this long-term trend downward is significant due to how little the averages move from year to year. (Compared to other Audio Features above that can fluctuate from 20-25% of its min/max value)</br>
 ![valence_change_Desc](https://user-images.githubusercontent.com/14188580/116905698-f0849700-ac04-11eb-80ba-f00780d67050.PNG)
 The chart above shows the pd.describe() output for minimum avg. valence, maximum avg. valence, and the change between those values for each year since 1990.</br>
 
-
+Key takeaways for Valence:
+* Volitility in Avg. Yearly Valence Change Percentage has increased to an average of 17.42% since 2014.
+* From 1990 to 2014, the Avg. Yearly Valence Change Percentage was 13.28%. At this rate, we may be heading to much more distinct seasonal switches in Billboard music.
+* While volatility is increasing, our overall average Valence values are still on the decline indicating a large shift in listening preferences for broader audiences.
+<br></br>
 
 ### Danceability
+Before jumping into this project, the thought of 'Danceability' as it pertains to pop music sounded like what peanut butter is to jelly.</br>
+From the first image in this analysis, seeing how Danceability is the second-highest audio feature value for Billboard tracks was not much of a surprise.</br>
+Danceability on its own:
+![danceability](https://user-images.githubusercontent.com/14188580/116912339-b1a70f00-ac0d-11eb-9b20-b2a7f49047f8.png)
 
+What IS surprising is seeing the heavy dip from 2001 to 2012.</br>
+At a glance this pattern is very similar to the Speechiness feature reviewed above, but with an insignificant average change since 1990.</br>
+
+From year to year, Danceability does not move much.</br>
+Over longer periods of time, considering popular music's core function and demographic, I believe this sinusoidal pattern to be very significant.</br>
+There is a lot of speculation I could make about this specific trend:</br>
+Like how the trameframe of the United States' involvement in the Iraq War very closely lines up with the heavy dip below average and subsequent pull-up.</br>
+But speculation aside, from the values seen above it looks like we hit the peak of our long-term cycle for Danceability in 2019.</br>
+If this cycle is as long as the last, Disco will have to wait another 10+ years to make a comeback.
+<br></br>
 ### Energy
 
