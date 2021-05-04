@@ -27,7 +27,7 @@ pip install numpy
 </br>
 
 # Overview:
-For every song provided by Spotify's streaming service, there is an audio analysis system that attempts to quantify (7) specific musical qualities of a song along with its Tempo and Loudness.</br></br>
+For every song provided by Spotify's streaming service, there is an audio analysis system that attempts to quantify (7) specific musical qualities of that song along with its Tempo and Loudness.</br></br>
 The Musical Qualities and Their Descriptions:
 ### Danceability
 How suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity.</br>
@@ -111,7 +111,7 @@ Track | Spotify ID | Valence
 In this repository is a file named Clean_Billboard.csv which contains all of the Billboard Top 100 Songs for every week since its inception in 1958.</br>
 The Spotify_and_Billboard.ipynb file is the first notebook used to clean and collect information based on this initial .csv file.</br>
 
-*For anyone who wants to use the Spotipy library to access the Spotify API, the authorization system in Cell2 requires a python file in the same directory as this with two variables: client_id and client_secret set to your individual access tokens.*</br>
+*For anyone who wants to use the Spotipy library to access the Spotify API, the authorization system in Cell2 requires a python file in the same directory as this repo with two variables: client_id and client_secret set to your individual access tokens.*</br>
 
 ### Preparation
 The Billboard Data at the time of creating these notebooks is 327,387  rows, making filtering a crucial step before anything can be accomplished.</br>
@@ -196,17 +196,22 @@ After exploding our results based on the total_weeks column, our final output wi
 
 After a very lengthy process of accumulating Spotify IDs and searching for their respective Audio Features, I gathered all of the data into a combined .csv file that contains the average value for each Audio Feature grouped by each week of the Billboard Top 100 since January of 1990.</br>
 </br>
-Due to the wide range of musical genres available in a single week sample of the Billboard 100, combined with the reliable results of Spotify's audio analysis system, any noticeable change in one of these metrics over time would suggest a noteworthy change in value weight.<br></br>
+Due to the wide range of musical genres available in a single week sample of the Billboard 100, combined with the mostly predictable results of Spotify's audio analysis system, any noticeable change in one of these metrics over time would suggest a significant change in music consumption trends.<br></br>
 
 ![avg_features](https://user-images.githubusercontent.com/14188580/116900731-b2847480-abfe-11eb-8bc2-2b3690aefbd1.png)
 <br></br>
 
 
 From a zoomed out perspective, it is easy to tell where the musical priorities of popular music stand.</br>
+In ascending order based on the chart above, we will dive deeper into each feature.<br></br>
+
 ### Instrumentalness
 While instrumentation without vocals has never been a common factor in pop music, what looks to be a faint heartbeat in the 90s has barely been breathing since 2007.</br>
 ![instrumentalism](https://user-images.githubusercontent.com/14188580/116900720-ae585700-abfe-11eb-90a6-a23c10b59022.png)
-<br></br>
+
+Instrumentalness is a very polarized characteristic of music.</br>
+It is very straightforward when we can easily find a confidence value of 0.9 or greater on a track without vocals, whereas it's difficult to find something above 0.2 when it comes to popular music that is very vocal heavy.</br>
+We can safely say that after 1998 there are hardly any tracks with instrumental sections included in the Billboard 100 on any given week.<br></br>
 
 ### Speechiness
 This one is a difficult feature to analyze due to the distribution of its values across music.</br>
@@ -216,13 +221,22 @@ As mentioned in the overview, higher confidence levels of Speechiness are only h
 In my research of tracks outside of the Billboard charts, the highest levels of Speechiness in music are reserved almost exclusively for Rap and Country (guess they're not so different after all..)</br>
 This may indicate an algorithmic emphasis on perceived vocal:music loudness by Spotify.</br>
 In any case, the rising average of speechiness is significant now that we have stayed above 0.1 for the last 5 years when the mean is so close to 0.</br>
-![speechiness](https://user-images.githubusercontent.com/14188580/116900703-a7314900-abfe-11eb-884f-aacdade9ff91.png)
-What will be a recurring theme throughout the rest of this analysis is the near-sinusoidal shape Speechiness takes.</br>
-What is most interesting to me in this long-term cyclical pattern is a trend of increasing intensity per cycle.<br></br>
+![speechiness](https://user-images.githubusercontent.com/14188580/117069877-a2e65800-acf2-11eb-97af-b0b44f935b87.png)
+</br>
+Three main takeaways for Speechiness:
+* The long-term sinusoidal shape will be a recurring theme as we go through these audio features, indicating trend patterns that come and go in music.
+* Another recurring theme will be the significant increase in volatility per-year, in this case, beginning in 2017
+* The intensity of the long-term cycle seen here increases with each peak and trough away from the mean-line, indicating greater swings both positive and negative.<br></br>
 
 ### Acousticness
-Acousticness is a funny one, from 1990 it is clear that there is a large single cycle, but zooming in there are annual trends that cannot be ignored.</br>
-![acoustic](https://user-images.githubusercontent.com/14188580/116410325-479bfd80-a7fa-11eb-9af1-c6492fe33212.png)
+Acousticness is a funny one.</br>
+![acoustic](https://user-images.githubusercontent.com/14188580/117071496-d0cc9c00-acf4-11eb-9229-be235fbd6bd5.png)
+</br>
+Just like Speechiness before it, a long term low-amplitude sinusoidal cycle is visible from 1993 to 2018</br>
+Yet, unlike Speechiness, there is almost no change in average value from our starting point.
+At the end of this cycle is a significant push upwards in value that seems out of character for the 28 years before it.</br>
+Aside from the long-term trends, zooming in on the last 12 years there are annual patterns that cannot be ignored.</br>
+![acoustic2](https://user-images.githubusercontent.com/14188580/117071718-112c1a00-acf5-11eb-9298-f2f72cac33a8.png)
 </br>
 Over the last 11 years we are seeing a significant upwards trend in Acousticness.</br>
 What makes this so funny to me are the annual mini-cycles that have been flying up every holiday season.</br>
@@ -234,32 +248,35 @@ It is no secret in the music world that artists will strategically release music
 Summer is most notable for positive bouncy radio hits, maybe the end of the year is a market in its own.<br></br>
 
 ### Liveness
-![liveness](https://user-images.githubusercontent.com/14188580/116900668-9da7e100-abfe-11eb-942f-e7f39247315a.png)
-</br>With very little change in average over the last 30 years, Liveness shows very strong yearly trends where Billboard seems to really lean into it around the new year.</br>
-These yearly cycles are very similar to Acousticness, but the most rigid cycle patterns can be seen from 2002 to 2010, ending with the largest peak.</br>
-![liveness_2002-2012](https://user-images.githubusercontent.com/14188580/116900660-9aacf080-abfe-11eb-8ffe-22b3aba51afb.png)
-
+![liveness](https://user-images.githubusercontent.com/14188580/117072099-96afca00-acf5-11eb-8796-01d235f1d41d.png)
+</br>
+With very little change in average over the last 30 years, Liveness is another feature providing evidence for long-term musical cycles.</br>
+What makes Liveness stand out is how evenly back-and-forth it can bounce from year to year.</br>
+![liveness_2002-2012](https://user-images.githubusercontent.com/14188580/117072498-23f31e80-acf6-11eb-8afb-54ce5f0b7de0.png)
 </br>
 
-Since Liveness is typically a polarized value, the consistent yearly movement between minimum and maximum is caused by the ratio of songs that fall under a "live" category included in the week.</br>
+Since Liveness is typically a polarized value, the consistent yearly movement between minimum and maximum is caused by the ratio of songs included in the Top100 week that fall under the "live" category.</br>
 This theory was confirmed with some Pandas magic.</br>
 I added a column to the dataframe of weekly averages that includes the number of tracks per week that have a Liveness value greater than 0.4.</br>
 Sorting the dataframe by liveness_avg is VERY close to sorting by this new column of song counts.</br>
-![countof_liveness](https://user-images.githubusercontent.com/14188580/116901533-a8af4100-abff-11eb-9bdb-1c3258559b0e.PNG)
-<br></br>
+![countof_liveness](https://user-images.githubusercontent.com/14188580/116901533-a8af4100-abff-11eb-9bdb-1c3258559b0e.PNG)<br></br>
+
 ### Valence
-![valence](https://user-images.githubusercontent.com/14188580/116901741-e8762880-abff-11eb-8b3c-87f76e1c9f32.png)
-As a huge music fan, the result of visualizing Valence is something that I saw coming.</br>
+![valence](https://user-images.githubusercontent.com/14188580/117072832-ab409200-acf6-11eb-92f9-20d9c999569f.png)
+</br>
+As a huge music fan, the result of visualizing Valence is something that I kind of predicted.</br>
 According to Spotify, popular music has been steadily becoming less and less "positive" or "happy" sounding over the last 30 years.</br>
 
 While sadder songs have always had a place in popular music, this long-term trend downward is significant due to how little the averages move from year to year. (Compared to other Audio Features above that can fluctuate from 20-25% of its min/max value)</br>
 ![valence_change_Desc](https://user-images.githubusercontent.com/14188580/116905698-f0849700-ac04-11eb-80ba-f00780d67050.PNG)
-The chart above shows the pd.describe() output for minimum avg. valence, maximum avg. valence, and the change between those values for each year since 1990.</br>
+</br>
+The chart above shows the pd.describe() output for the minimum and maximum average valence, and the change between those values for each year since 1990.</br>
 
 Key takeaways for Valence:
 * Volitility in Avg. Yearly Valence Change Percentage has increased to an average of 17.42% since 2014.
+* While Valence looks like it bounces around year-to-year similarly to Liveness, any consistency it may have had is gone after 2014.
 * From 1990 to 2014, the Avg. Yearly Valence Change Percentage was 13.28%. At this rate, we may be heading to much more distinct seasonal switches in Billboard music.
-* While volatility is increasing, our overall average Valence values are still on the decline indicating a large shift in listening preferences for broader audiences.
+* While volatility is increasing, our overall average Valence values are still on the decline indicating a large shift in listening preferences for darker music.
 <br></br>
 
 ### Danceability
