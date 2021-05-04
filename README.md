@@ -279,4 +279,20 @@ But speculation aside, from the values seen above it looks like we hit the peak 
 If this cycle is as long as the last, Disco will have to wait another 10+ years to make a comeback.
 <br></br>
 ### Energy
+![energy](https://user-images.githubusercontent.com/14188580/117060826-07031f00-ace7-11eb-8e85-9a65b82759a3.png)
 
+Last but not least, the average Energy values for each week over the last 30 years lives up to its audio feature namesake.</br>
+Being the highest overal average value between all of the Spotify audio features, Energy shows evidence of a long term cyclical trend.</br>
+From the beginning of the 90s until 2014 shows a strong sinusoidal shape that is a higher intensity mirror image to that of Danceability.</br>
+
+![energy_danceability](https://user-images.githubusercontent.com/14188580/117061956-6a418100-ace8-11eb-92ad-fded237b4b2a.png)
+
+Where Danceability trends slightly up, Energy trends downwards harder...and vice-versa.</br>
+The large separation in averages from 2011-2012 indicates this seemingly inverse relationship struggled to coexist in the realm of popular music.</br>
+
+Some interesting takeaways:
+* As of 2018, both Energy and Danceability are decreasing in average - with Energy falling at a much faster pace.
+* The visible periods where Danceability surpasses Energy are miniscule compared to Energy's domination from 2000-2017. This may indicate a general music consumption preference for Energy despite long term cycles.
+* Similarly to features like Valence and Acousticness, the more recent years have shown a huge shift towards high Volatility per-year.
+</br>
+![volatilityenergy](https://user-images.githubusercontent.com/14188580/117064399-c528a780-aceb-11eb-93ab-7f8f16661564.png)
