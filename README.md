@@ -7,7 +7,7 @@ Is it possible for Spotify to quantify the changes in popular music over the las
 [Data of the Billboard Top 100 Charts](https://www.kaggle.com/dhruvildave/billboard-the-hot-100-songs)
 
 ## Resources:
-[Spotipy](https://spotipy.readthedocs.io/en/2.18.0/) - Python Library for the Spotify API
+[Spotipy](https://spotipy.readthedocs.io/en/2.18.0/) - Python Library for the [https://developer.spotify.com/](Spotify API)
 ````
 pip install spotipy
 ````
