@@ -310,6 +310,6 @@ The large separation in averages from 2011-2012 indicates this seemingly inverse
 Some interesting takeaways:
 * As of 2018, both Energy and Danceability are decreasing in average - with Energy falling at a much faster pace.
 * The visible periods where Danceability surpasses Energy are miniscule compared to Energy's domination from 2000-2017. This may indicate a general music consumption preference for Energy despite long term cycles.
-* Similarly to features like Valence and Acousticness, the more recent years have shown a huge shift towards high Volatility per-year.
-</br>
+* Similarly to features like Valence and Acousticness, the more recent years have shown a huge shift towards high Volatility per-year.</br>
 ![volatilityenergy](https://user-images.githubusercontent.com/14188580/117064399-c528a780-aceb-11eb-93ab-7f8f16661564.png)
+</br>
