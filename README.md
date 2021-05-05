@@ -283,8 +283,8 @@ Key takeaways for Valence:
 Before jumping into this project, the thought of 'Danceability' as it pertains to pop music sounded like what peanut butter is to jelly.</br>
 From the first image in this analysis, seeing how Danceability is the second-highest audio feature value for Billboard tracks was not much of a surprise.</br>
 Danceability on its own:
-![danceability](https://user-images.githubusercontent.com/14188580/116912339-b1a70f00-ac0d-11eb-9b20-b2a7f49047f8.png)
-
+![danceability](https://user-images.githubusercontent.com/14188580/117147523-f3a19380-ad7a-11eb-9f15-fc25bdfc4e74.png)
+</br>
 What IS surprising is seeing the heavy dip from 2001 to 2012.</br>
 At a glance this pattern is very similar to the Speechiness feature reviewed above, but with an insignificant average change since 1990.</br>
 
