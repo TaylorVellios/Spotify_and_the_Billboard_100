@@ -28,7 +28,7 @@ pip install numpy
 
 # Overview:
 For every song provided by Spotify's streaming service, there is an audio analysis system that attempts to quantify (7) specific musical qualities of that song along with its Tempo and Loudness.</br></br>
-The Musical Qualities and Their Descriptions:
+Below are those musical qualities and their descriptions with some examples:
 ### Danceability
 How suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity.</br>
 Values: 0.0 - 1.0</br>
@@ -111,16 +111,16 @@ Track | Spotify ID | Valence
 In this repository is a file named Clean_Billboard.csv which contains all of the Billboard Top 100 Songs for every week since its inception in 1958.</br>
 The Spotify_and_Billboard.ipynb file is the first notebook used to clean and collect information based on this initial .csv file.</br>
 
-*For anyone who wants to use the Spotipy library to access the Spotify API, the authorization system in Cell2 requires a python file in the same directory as this repo with two variables: client_id and client_secret set to your individual access tokens.*</br>
+*For anyone who wants to use the Spotipy library to access the Spotify API, the authorization system in Cell2 requires a python file in the same directory as this repo with two variables: client_id and client_secret set to your individual access tokens. [See The Documentation for Details](https://spotipy.readthedocs.io/en/2.11.1/)*</br>
 
 ### Preparation
-The Billboard Data at the time of creating these notebooks is 327,387  rows, making filtering a crucial step before anything can be accomplished.</br>
+The Billboard Data at the time of creating these notebooks is 327,387 rows, making filtering a crucial step before anything can be accomplished.</br>
 
 ![filter](https://user-images.githubusercontent.com/14188580/116272741-c5063600-a746-11eb-8508-dd6da47937b6.PNG)
 
 By selecting a 5-year range of time, in this example - from 2015 to 2020, we end up with 26,100 songs.<br>
 Billboard frequently charts the same song from week to week until it loses steam.</br>
-In order to remove songs that chart multiple times it is important to add a column to the dataframe that is a list of all dates a song was included in the Top 100.</br>
+In order to remove songs that chart multiple times I chose to add a column to the dataframe that is a list of all dates a song was included in the Top 100.</br>
 The consolidation stage accomplishes several things:
 * Preserves the value of the highest peak-rating for a song
 * Adds a column of lists for the weeks a song was on the chart
@@ -156,7 +156,7 @@ After the first round of searching we have an output that looks something like t
 Any track that failed the automated search will have a NaN value in the "spotify_id" column.</br>
 For the 2015-2020 filter range, 16 Songs included odd characters that broke our query or are not available on Spotify.</br>
 
-The further back on the Billboard charts you go, the more likely it is that a song will not be on the platform.</br>
+The further back on the Billboard charts you go, the more likely it is that a song will not be on the Spotify platform.</br>
 
 Search Ranges | Manual Searches | Dropped Tracks
 --------------|-----------------|----------------
@@ -178,7 +178,7 @@ For this example, no tracks need to be dropped, all NaN values have been filled 
 
 ## Data Collection - Spotify Audio Features
 
-Once all possible tracks have IDs populated and all failed tracks (if any) have been dropped, we can obtain the audio features for each unique track.</br>
+Once all possible tracks have IDs populated and all failed tracks (if any) have been dropped, we can obtain the audio features for each unique track by using the Spotipy.audio_features() function.</br>
 
 ![features_df](https://user-images.githubusercontent.com/14188580/116278716-62b03400-a74c-11eb-98e2-fef5c9a67a22.PNG)
 </br>
