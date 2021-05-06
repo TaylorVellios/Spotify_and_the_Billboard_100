@@ -313,3 +313,6 @@ Some interesting takeaways:
 * Similarly to features like Valence and Acousticness, the more recent years have shown a huge shift towards high Volatility per-year.</br>
 ![volatilityenergy](https://user-images.githubusercontent.com/14188580/117064399-c528a780-aceb-11eb-93ab-7f8f16661564.png)
 </br>
+
+# Non-Spotify Data
+![distribution_weekson](https://user-images.githubusercontent.com/14188580/117226881-3a26da80-addb-11eb-8493-09903ae1866f.png)
