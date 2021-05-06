@@ -315,4 +315,4 @@ Some interesting takeaways:
 </br>
 
 # Non-Spotify Data
-![distribution_weekson](https://user-images.githubusercontent.com/14188580/117226881-3a26da80-addb-11eb-8493-09903ae1866f.png)
+![distribution_weekson](https://user-images.githubusercontent.com/14188580/117226908-4f9c0480-addb-11eb-8b75-01cfb8dc6cb6.png)
