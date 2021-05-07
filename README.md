@@ -318,4 +318,4 @@ Some interesting takeaways:
 # What Makes a #1 Hit Song?
 
 # Non-Spotify Data
-![distribution_weekson](https://user-images.githubusercontent.com/14188580/117470469-73b32f00-af1c-11eb-8c11-956a2b2629dd.png)
+![distribution_weekson](https://user-images.githubusercontent.com/14188580/117477097-31412080-af23-11eb-92a1-e31a3fd324fb.png)
