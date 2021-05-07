@@ -198,7 +198,7 @@ After a very lengthy process of accumulating Spotify IDs and searching for their
 </br>
 Due to the wide range of musical genres available in a single week sample of the Billboard 100, combined with the mostly predictable results of Spotify's audio analysis system, any noticeable change in one of these metrics over time would suggest a significant change in music consumption trends.<br></br>
 
-![avg_features](https://user-images.githubusercontent.com/14188580/116900731-b2847480-abfe-11eb-8bc2-2b3690aefbd1.png)
+![roll_avg total](https://user-images.githubusercontent.com/14188580/117467106-ff2ac100-af18-11eb-9304-d334addeb898.png)
 <br></br>
 
 
@@ -230,7 +230,7 @@ Three main takeaways for Speechiness:
 
 ### Acousticness
 Acousticness is a funny one.</br>
-![acoustic](https://user-images.githubusercontent.com/14188580/117071496-d0cc9c00-acf4-11eb-9229-be235fbd6bd5.png)
+![acoustic2](https://user-images.githubusercontent.com/14188580/117467305-2ed9c900-af19-11eb-8a3a-183d55624f6a.png)
 </br>
 Just like Speechiness before it, a long term low-amplitude sinusoidal cycle is visible from 1993 to 2018</br>
 Yet, unlike Speechiness, there is almost no change in average value from our starting point.
@@ -268,15 +268,16 @@ As a huge music fan, the result of visualizing Valence is something that I kind 
 According to Spotify, popular music has been steadily becoming less and less "positive" or "happy" sounding over the last 30 years.</br>
 
 While sadder songs have always had a place in popular music, this long-term trend downward is significant due to how little the averages move from year to year. (Compared to other Audio Features above that can fluctuate from 20-25% of its min/max value)</br>
-![valence_change_Desc](https://user-images.githubusercontent.com/14188580/116905698-f0849700-ac04-11eb-80ba-f00780d67050.PNG)
+![valence_change_Desc](https://user-images.githubusercontent.com/14188580/117468981-dc99a780-af1a-11eb-8b11-30615dced768.PNG)
 </br>
-The chart above shows the pd.describe() output for the minimum and maximum average valence, and the change between those values for each year since 1990.</br>
 
 Key takeaways for Valence:
+* The Maximum Weekly Average for Valence over the last 7 years is lower than the Minimum Weekly Average from 1990.
 * Volitility in Avg. Yearly Valence Change Percentage has increased to an average of 17.42% since 2014.
 * While Valence looks like it bounces around year-to-year similarly to Liveness, any consistency it may have had is gone after 2014.
 * From 1990 to 2014, the Avg. Yearly Valence Change Percentage was 13.28%. At this rate, we may be heading to much more distinct seasonal switches in Billboard music.
 * While volatility is increasing, our overall average Valence values are still on the decline indicating a large shift in listening preferences for darker music.
+* Since 2019, Valence has been slightly increasing. With how difficult and unprecedented the last year has been, maybe the average music consumer needed that little bump in  positivity.
 <br></br>
 
 ### Danceability
@@ -314,5 +315,7 @@ Some interesting takeaways:
 ![volatilityenergy](https://user-images.githubusercontent.com/14188580/117064399-c528a780-aceb-11eb-93ab-7f8f16661564.png)
 </br>
 
+# What Makes a #1 Hit Song?
+
 # Non-Spotify Data
-![distribution_weekson](https://user-images.githubusercontent.com/14188580/117226908-4f9c0480-addb-11eb-8b75-01cfb8dc6cb6.png)
+![distribution_weekson](https://user-images.githubusercontent.com/14188580/117470469-73b32f00-af1c-11eb-8c11-956a2b2629dd.png)
