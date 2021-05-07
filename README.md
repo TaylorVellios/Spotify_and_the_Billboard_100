@@ -230,13 +230,13 @@ Three main takeaways for Speechiness:
 
 ### Acousticness
 Acousticness is a funny one.</br>
-![acoustic2](https://user-images.githubusercontent.com/14188580/117467305-2ed9c900-af19-11eb-8a3a-183d55624f6a.png)
+![acoustic](https://user-images.githubusercontent.com/14188580/117476832-e8896780-af22-11eb-83d4-65675d026c67.png)
 </br>
 Just like Speechiness before it, a long term low-amplitude sinusoidal cycle is visible from 1993 to 2018</br>
 Yet, unlike Speechiness, there is almost no change in average value from our starting point.
 At the end of this cycle is a significant push upwards in value that seems out of character for the 28 years before it.</br>
 Aside from the long-term trends, zooming in on the last 12 years there are annual patterns that cannot be ignored.</br>
-![acoustic2](https://user-images.githubusercontent.com/14188580/117071718-112c1a00-acf5-11eb-9298-f2f72cac33a8.png)
+![acoustic2](https://user-images.githubusercontent.com/14188580/117476848-eb845800-af22-11eb-914a-5a06016c19f5.png)
 </br>
 Over the last 11 years we are seeing a significant upwards trend in Acousticness.</br>
 What makes this so funny to me are the annual mini-cycles that have been flying up every holiday season.</br>
