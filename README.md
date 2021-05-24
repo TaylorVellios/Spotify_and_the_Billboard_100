@@ -238,9 +238,9 @@ At the end of this cycle is a significant push upwards in value that seems out o
 Aside from the long-term trends, zooming in on the last 12 years there are annual patterns that cannot be ignored.</br>
 ![acoustic2](https://user-images.githubusercontent.com/14188580/117476848-eb845800-af22-11eb-914a-5a06016c19f5.png)
 </br>
-Over the last 11 years we are seeing a significant upwards trend in Acousticness.</br>
-What makes this so funny to me are the annual mini-cycles that have been flying up every holiday season.</br>
-Since 2010, there is severe upwards movement in acousticness leading into the new year, where it then falls back to its steady growth line.</br>
+Over the last 10 years we have seen a significant upwards trend in Acousticness.</br>
+What makes this so funny are the annual mini-cycles that have been flying up every holiday season.</br>
+Since 2010, there is severe annual upwards movement in acousticness leading into the new year, where it then falls back to its steady growth line.</br>
 This intensity has been growing exponentially over the last 3 years.
 </br>
 It's very difficult for me not to assume this is due to what we can call a "Holiday Effect".</br>
