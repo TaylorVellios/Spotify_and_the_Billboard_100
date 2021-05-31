@@ -339,7 +339,7 @@ peak_loudness = all_tracks_exploded[['song','artist','peak_rank','total_weeks','
 
 #### peak_loudness.head()
 song|artist|peak_rank|total_weeks|loudness
-----|------|---------|-----------|----------|--------
+----|------|---------|-----------|----------
 Forever|Drake Featuring Kanye West, Lil Wayne & Eminem|8|11|-1.304	
 Empire State Of Mind|Jay-Z + Alicia Keys|1|16|-1.538
 Run This Town|Jay-Z, Rihanna & Kanye West|2|3|-1.802
@@ -348,7 +348,7 @@ Shots|LMFAO Featuring Lil Jon|96|16|-1.912
 
 #### peak_loudness.tail()
 song|artist|peak_rank|total_weeks|loudness
-----|------|---------|-----------|----------|--------
+----|------|---------|-----------|----------
 Sexy Chick|David Guetta Featuring Akon|6|21|-7.694
 Steady Mobbin|Young Money Featuring Gucci Mane|48|20|-8.090
 Heartbreak Warfare|John Mayer|85|19|-8.113
