@@ -334,7 +334,8 @@ Week|loudness_avg
 The end of 2009 to the beginning of 2010 was the loudest period for pop music to date.</br>
 Filtering and sorting the dataframe containing every song, we can determine the range of loudness and the biggest offenders.</br>
 ```
-peak_loudness = all_tracks_exploded[['song','artist','peak_rank','total_weeks','loudness']][(all_tracks_exploded['weeks'] == '2010-01-09')].sort_values(by=['loudness'], ascending=False)
+peak_loudness = all_tracks_exploded[['song','artist','peak_rank','total_weeks','loudness']]\
+[(all_tracks_exploded['weeks'] == '2010-01-09')].sort_values(by=['loudness'], ascending=False)
 ```
 
 #### peak_loudness.head()
