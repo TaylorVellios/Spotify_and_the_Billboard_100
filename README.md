@@ -305,7 +305,16 @@ Some interesting takeaways:
 ![volatilityenergy](https://user-images.githubusercontent.com/14188580/117064399-c528a780-aceb-11eb-93ab-7f8f16661564.png)
 </br>
 
-# What Makes a #1 Hit Song?
+### Loudness
+If you are unfamiliar with the [Loudness Wars](https://en.wikipedia.org/wiki/Loudness_war), in a nutshell: it is the concern by many audiophiles and audio engineers that the universal adoption of digital recording technologies in the music industry has led to music being mixed and mastered with significantly less dynamic range.</br>
+The story that is frequently told regarding the Loudness War in the 90's and 00's is that audio engineers were convinced that louder = better.</br>
 
-# Non-Spotify Data
-![distribution_weekson](https://user-images.githubusercontent.com/14188580/117477097-31412080-af23-11eb-92a1-e31a3fd324fb.png)
+What does Spotify have to show about loudness?
+
+![loudness](https://user-images.githubusercontent.com/14188580/120230864-d21ab700-c215-11eb-999f-0caa9f408a8e.png)
+
+
+#Summary
+
+While the measurements analyzed above are proprietary for the Spotify platform, it is clear that the values derived indicate a cyclical pattern for the average pop-music listener.</br>
+
