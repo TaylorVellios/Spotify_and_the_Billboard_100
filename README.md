@@ -306,15 +306,63 @@ Some interesting takeaways:
 </br>
 
 ### Loudness
-If you are unfamiliar with the [Loudness Wars](https://en.wikipedia.org/wiki/Loudness_war), in a nutshell: it is the concern by many audiophiles and audio engineers that the universal adoption of digital recording technologies in the music industry has led to music being mixed and mastered with significantly less dynamic range.</br>
-The story that is frequently told regarding the Loudness War in the 90's and 00's is that audio engineers were convinced that louder = better.</br>
+If you are unfamiliar with the [Loudness Wars](https://en.wikipedia.org/wiki/Loudness_war), in a nutshell: it is the concern by many audiophiles and audio engineers that the universal adoption of digital recording technologies in the music industry has led to music being mixed and mastered with significantly less dynamic range; resulting in a worse listening experience.</br>
+The story that is frequently told regarding the Loudness War in the 90's and 00's is that many pop and rock audio engineers were convinced that louder = better.</br>
 
 What does Spotify have to show about loudness?
 
 ![loudness](https://user-images.githubusercontent.com/14188580/120230864-d21ab700-c215-11eb-999f-0caa9f408a8e.png)
 
+As can be seen from low-orbit, average pop music loudness climbed and higher and higher until its peak in 2010.</br>
+For average loudness across the entire selection of Billboard 100 songs to be around -5dB is absolutely ridiculous.</br>
+Loudness for a digital audio file cannot pass 0dB before distorting.</br>
+If mastering engineers are trying to get as close as possible to 0dB during the loudest part of a song, this tells us that most if not all songs selected for the Billboard charts during the height of loudness were relentlessly loud across the board.</br>
 
-#Summary
+What songs make up these miraculously loud weeks?
+
+```
+avg_features[['week','loudness_avg']].sort_values(by=['loudness_avg'], ascending=False).head()
+```
+Week|loudness_avg
+----|------------
+2010-01-09|-4.75491
+2010-01-16|-4.79444
+2010-01-23|-4.82161
+2009-12-26|-4.82846
+2010-01-02|-4.84132
+
+The end of 2009 to the beginning of 2010 was the loudest period for pop music to date.</br>
+Filtering and sorting the dataframe containing every song, we can determine the range of loudness and the biggest offenders.</br>
+```
+peak_loudness = all_tracks_exploded[['song','artist','peak_rank','total_weeks','loudness']]\
+[(all_tracks_exploded['weeks'] == '2010-01-09')].sort_values(by=['loudness'], ascending=False)
+```
+
+#### peak_loudness.head()
+song|artist|peak_rank|total_weeks|loudness
+----|------|---------|-----------|----------
+Forever|Drake Featuring Kanye West, Lil Wayne & Eminem|8|11|-1.304	
+Empire State Of Mind|Jay-Z + Alicia Keys|1|16|-1.538
+Run This Town|Jay-Z, Rihanna & Kanye West|2|3|-1.802
+Shots|LMFAO Featuring Lil Jon|96|16|-1.912
+3|Britney Spears|1|10|-1.917
+
+#### peak_loudness.tail()
+song|artist|peak_rank|total_weeks|loudness
+----|------|---------|-----------|----------
+Sexy Chick|David Guetta Featuring Akon|6|21|-7.694
+Steady Mobbin|Young Money Featuring Gucci Mane|48|20|-8.090
+Heartbreak Warfare|John Mayer|85|19|-8.113
+Im Going In|Drake Featuring Lil Wayne & Young Jeezy|40|4|-8.455
+Money To Blow|Birdman Featuring Lil Wayne & Drake|26|10|-8.686
+
+
+# Summary
 
 While the measurements analyzed above are proprietary for the Spotify platform, it is clear that the values derived indicate a cyclical pattern for the average pop-music listener.</br>
 
+Another significant trend is the increasing volatility of these average values within a single year.</br>
+If volatility continues to swing as wildly as it is threatening to, the cyclical patterns we have seen may break completely.</br>
+The biggest takeaway from the recent volatility is that music listeners are either:
+* Getting bored with popular music much faster than they used to.
+* Not listening to popular music as much as they used to, and Billboard is starting to throw darts at the wall trying to get things to stick.
