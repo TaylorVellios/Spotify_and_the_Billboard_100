@@ -98,6 +98,7 @@ Track | Spotify ID | Valence
 <br></br>
 
 <hr>
+
 # Data Collection
 In this repository is a file named Clean_Billboard.csv which contains all of the Billboard Top 100 Songs for every week since its inception in 1958.</br>
 The Spotify_and_Billboard.ipynb file is the first notebook used to clean and collect information based on this initial .csv file.</br>
@@ -184,6 +185,7 @@ After exploding our results based on the total_weeks column, our final output wi
 <br></br>
 
 <hr>
+
 # Analysis
 
 After a very lengthy process of accumulating Spotify IDs and searching for their respective Audio Features, I gathered all of the data into a combined .csv file that contains the average value for each Audio Feature grouped by each week of the Billboard Top 100 since January of 1990.</br>
@@ -395,6 +397,7 @@ Much in the same way industries are disrupted by newcomers, I believe that these
 
 
 <hr>
+
 Thank you for stopping by!
 As an added bonus, there is a file in this repository that I have created to help anyone chart their taste in music against the Billboard charts.</br>
 If you have a Spotify API key, I highly encourage you to give it a shot!</br>
