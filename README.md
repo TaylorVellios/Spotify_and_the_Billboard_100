@@ -15,7 +15,7 @@ Matplotlib|pip install matplotlib
 Numpy|pip install numpy
 
 </br>
-
+<hr>
 # Overview:
 For every song provided by Spotify's streaming service, there is an audio analysis system that attempts to quantify (7) specific musical qualities of that song along with its Tempo and Loudness.</br></br>
 Below are those musical qualities and their descriptions with some examples:
@@ -96,7 +96,7 @@ Track | Spotify ID | Valence
 </br>
 <br></br>
 
-
+<hr>
 # Data Collection
 In this repository is a file named Clean_Billboard.csv which contains all of the Billboard Top 100 Songs for every week since its inception in 1958.</br>
 The Spotify_and_Billboard.ipynb file is the first notebook used to clean and collect information based on this initial .csv file.</br>
@@ -182,6 +182,7 @@ After exploding our results based on the total_weeks column, our final output wi
 
 <br></br>
 
+<hr>
 # Analysis
 
 After a very lengthy process of accumulating Spotify IDs and searching for their respective Audio Features, I gathered all of the data into a combined .csv file that contains the average value for each Audio Feature grouped by each week of the Billboard Top 100 since January of 1990.</br>
@@ -366,7 +367,8 @@ I believe the overcompressed sound of pop music from the 2000's has worn on the 
 Unfortunately for the largest opponents of the loudness wars, we have already determined that pop music trends tend to be cyclical.</br>
 A peak in loudness right when digital audio equipment hit a plateau in innovation.</br>
 While it has been trending downwards since, there is a decent chance we go right back up into that -5dB+ range in the future.
-
+<br></br>
+<hr>
 
 # Summary
 
@@ -386,11 +388,8 @@ We have seen so many people in recent years go from obscurity to sensation nearl
 Much in the same way industries are disrupted by newcomers, I believe that these new artists will continue to push the increasing volatility seen in this analysis and open the proverbial flood gates for more types of music to be included in the pop spectrum.</br>
 
 
-
-
-
-
-
+<br></br>
+<br></br>
 
 
 
@@ -411,3 +410,4 @@ You can filter the Billboard Chart average data to any time period you wish.</br
 
 I listen to a wide variety of different music, but based on 86 of my favorite songs of all time, it is clear to see where my taste varies from Billboard's core demographic.
 
+<br></br>
