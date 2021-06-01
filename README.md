@@ -356,13 +356,58 @@ Heartbreak Warfare|John Mayer|85|19|-8.113
 Im Going In|Drake Featuring Lil Wayne & Young Jeezy|40|4|-8.455
 Money To Blow|Birdman Featuring Lil Wayne & Drake|26|10|-8.686
 
+For a song to have an average loudness from -1 to -5, not only is it an issue of the mixing and mastering, but of song composition.</br>
+Listening [Forever by Drake ft. Kanye West](https://open.spotify.com/track/6HSqyfGnsHYw9MmIpa9zlZ?si=cd9ca3249c8b41a5), it is incessantly loud and overcompressed.</br>
+This track is a perfect representation of the negative effects of the loudness wars from a listener's perspective.</br>
+
+Luckily, since the weeks this song charted there has been a steady decline in average loudness.</br>
+
+I believe the overcompressed sound of pop music from the 2000's has worn on the ears of its listeners.</br>
+Unfortunately for the largest opponents of the loudness wars, we have already determined that pop music trends tend to be cyclical.</br>
+A peak in loudness right when digital audio equipment hit a plateau in innovation.</br>
+While it has been trending downwards since, there is a decent chance we go right back up into that -5dB+ range in the future.
+
 
 # Summary
 
-While the measurements analyzed above are proprietary for the Spotify platform, it is clear that the values derived indicate a cyclical pattern for the average pop-music listener.</br>
+While the measurements analyzed above are proprietary for the Spotify platform, it is clear that the values derived indicate a cyclical pattern for the average pop-music listener from generation to generation.</br>
 
 Another significant trend is the increasing volatility of these average values within a single year.</br>
 If volatility continues to swing as wildly as it is threatening to, the cyclical patterns we have seen may break completely.</br>
+
 The biggest takeaway from the recent volatility is that music listeners are either:
 * Getting bored with popular music much faster than they used to.
 * Not listening to popular music as much as they used to, and Billboard is starting to throw darts at the wall trying to get things to stick.
+
+It is important to remember that Billboard is not the deciding factor whether a song is good or not, but they are a powerful influence into what is fed through radio waves and corporate licensed playback.</br>
+
+I'm very excited to see where the trends go from here.</br>
+We have seen so many people in recent years go from obscurity to sensation nearly overnight thanks to social media.</br>
+Much in the same way industries are disrupted by newcomers, I believe that these new artists will continue to push the increasing volatility seen in this analysis and open the proverbial flood gates for more types of music to be included in the pop spectrum.</br>
+
+
+
+
+
+
+
+
+
+
+<hr>
+Thank you for stopping by!
+As an added bonus, there is a file in this repository that I have created to help anyone chart their taste in music against the Billboard charts.</br>
+If you have a Spotify API key, I highly encourage you to give it a shot!</br>
+
+Open *BONUS_PersonalPlaylist_Plotting.ipynb* and follow the directions in the markup cells.</br>
+Be sure to clone the *Average_Features* folder from this repo as well.</br>
+
+This notebook file will take a link to any playlist, whether yours or a friends, and retrieve the average audio features to compare against Billboard.</br>
+You can filter the Billboard Chart average data to any time period you wish.</br>
+
+![bonus1](https://user-images.githubusercontent.com/14188580/120395828-4418fc00-c2fb-11eb-91e4-ad8dd4f4ebaa.png)
+
+![bonus2](https://user-images.githubusercontent.com/14188580/120395835-45e2bf80-c2fb-11eb-8e30-932fddff79b7.png)
+
+I listen to a wide variety of different music, but based on 86 of my favorite songs of all time, it is clear to see where my taste varies from Billboard's core demographic.
+
