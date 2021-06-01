@@ -15,7 +15,7 @@ Matplotlib|pip install matplotlib
 Numpy|pip install numpy
 
 </br>
-<hr>
+<hr></br>
 # Overview:
 For every song provided by Spotify's streaming service, there is an audio analysis system that attempts to quantify (7) specific musical qualities of that song along with its Tempo and Loudness.</br></br>
 Below are those musical qualities and their descriptions with some examples:
