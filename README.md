@@ -317,8 +317,8 @@ What does Spotify have to show about loudness?
 
 ![loudness](https://user-images.githubusercontent.com/14188580/120230864-d21ab700-c215-11eb-999f-0caa9f408a8e.png)
 
-As can be seen from low-orbit, average pop music loudness climbed and higher and higher until its peak in 2010.</br>
-For average loudness across the entire selection of Billboard 100 songs to be around -5dB is absolutely ridiculous.</br>
+As can be seen from low-orbit, average pop music loudness climbed higher and higher until its peak in 2010.</br>
+For average loudness across a selection of 100 songs to be around -5dB is absolutely ridiculous.</br>
 Loudness for a digital audio file cannot pass 0dB before distorting.</br>
 If mastering engineers are trying to get as close as possible to 0dB during the loudest part of a song, this tells us that most if not all songs selected for the Billboard charts during the height of loudness were relentlessly loud across the board.</br>
 
@@ -361,15 +361,19 @@ Im Going In|Drake Featuring Lil Wayne & Young Jeezy|40|4|-8.455
 Money To Blow|Birdman Featuring Lil Wayne & Drake|26|10|-8.686
 
 For a song to have an average loudness from -1 to -5, not only is it an issue of the mixing and mastering, but of song composition.</br>
-Listening [Forever by Drake ft. Kanye West](https://open.spotify.com/track/6HSqyfGnsHYw9MmIpa9zlZ?si=cd9ca3249c8b41a5), it is incessantly loud and overcompressed.</br>
-This track is a perfect representation of the negative effects of the loudness wars from a listener's perspective.</br>
+Listening to [Forever by Drake ft. Kanye West](https://open.spotify.com/track/6HSqyfGnsHYw9MmIpa9zlZ?si=cd9ca3249c8b41a5), it is incessantly loud and overcompressed.</br>
+This track is a perfect representation of the negative effects of the loudness wars from a listener's perspective:
+* it has no breaks in intensity
+* everything is compressed as flat as possible, no human voices sound like these in the real world
+* it may very well be clipping at times, there is some crunchiness
+</br>
 
 Luckily, since the weeks this song charted there has been a steady decline in average loudness.</br>
 
-I believe the overcompressed sound of pop music from the 2000's has worn on the ears of its listeners.</br>
+Looking at the decrease in average volume, and listening to how date that Drake song sounds in 2021, I believe the overcompressed sound of pop music from the 2000's has worn on the ears of its listeners.</br>
 Unfortunately for the largest opponents of the loudness wars, we have already determined that pop music trends tend to be cyclical.</br>
-A peak in loudness right when digital audio equipment hit a plateau in innovation.</br>
-While it has been trending downwards since, there is a decent chance we go right back up into that -5dB+ range in the future.
+The peak of loudness lines up close to the period when digital audio equipment hit a plateau in affordability and innovation.</br>
+While it has been trending downwards since, there is a decent chance we go right back up into that -5dB+ range in the future since most other factors from this point on should remain constant.
 <br></br>
 <hr>
 
