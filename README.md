@@ -314,6 +314,7 @@ Using R, this negative relationship is confirmed:
 
 [1] -0.6657366
 ````
+With an R value of -0.66, we have a moderate to strong negative relationship between Danceability and Energy.</br>
 
 
 Some interesting takeaways:
