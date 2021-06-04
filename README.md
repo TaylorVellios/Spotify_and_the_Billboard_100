@@ -302,6 +302,20 @@ From the beginning of the 90s until 2014 shows a strong sinusoidal shape that is
 Where Danceability trends slightly up, Energy trends downwards harder...and vice-versa.</br>
 The large separation in averages from 2011-2012 indicates this seemingly inverse relationship struggled to coexist in the realm of popular music.</br>
 
+Using R, this negative relationship is confirmed:
+
+![negative rel R](https://user-images.githubusercontent.com/14188580/120868145-ebdf3580-c558-11eb-8047-0011964aea25.png)
+
+![R-dance_energy](https://user-images.githubusercontent.com/14188580/120868375-8dff1d80-c559-11eb-8751-bfbca3d136f5.png)
+
+````
+# Confirming the R-Value Correllation
+> cor(avg_features$danceability_avg, avg_features$energy_avg)
+
+[1] -0.6657366
+````
+
+
 Some interesting takeaways:
 * As of 2018, both Energy and Danceability are decreasing in average - with Energy falling at a much faster pace.
 * The visible periods where Danceability surpasses Energy are miniscule compared to Energy's domination from 2000-2017. This may indicate a general music consumption preference for Energy despite long term cycles.
