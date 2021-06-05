@@ -306,7 +306,7 @@ Using R, this negative relationship is confirmed:
 
 ![negative rel R](https://user-images.githubusercontent.com/14188580/120868145-ebdf3580-c558-11eb-8047-0011964aea25.png)
 
-![R-dance_energy](https://user-images.githubusercontent.com/14188580/120868375-8dff1d80-c559-11eb-8751-bfbca3d136f5.png)
+![R-dance_energy](https://user-images.githubusercontent.com/14188580/120902927-ad08b880-c608-11eb-9287-68b16b482990.png)
 
 ````
 # Confirming the R-Value Correllation
